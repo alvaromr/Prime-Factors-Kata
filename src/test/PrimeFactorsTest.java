@@ -10,22 +10,32 @@ import static org.junit.Assert.assertEquals;
 
 public class PrimeFactorsTest {
     @Test
-    public void oneShouldNotHavePrimeFactors(){
+    public void oneShouldNotHavePrimeFactors() {
         assertEquals(Collections.emptyList(), PrimeFactors.factorize(1));
     }
 
     @Test
-    public void twoShouldHaveOnlyItselfAsAFactor(){
+    public void twoShouldHaveOnlyItselfAsAFactor() {
         assertEquals(Collections.singletonList(2), PrimeFactors.factorize(2));
     }
 
     @Test
-    public void threeShouldHaveOnlyItselfAsAFactor(){
+    public void threeShouldHaveOnlyItselfAsAFactor() {
         assertEquals(Collections.singletonList(3), PrimeFactors.factorize(3));
     }
 
     @Test
-    public void fourShouldHaveTwoTimesTwoAsFactors(){
-        assertEquals(Arrays.asList(2,2), PrimeFactors.factorize(4));
+    public void fourShouldHaveTwoTimesTwoAsFactors() {
+        assertEquals(Arrays.asList(2, 2), PrimeFactors.factorize(4));
+    }
+
+    @Test
+    public void fiveShouldHaveOnlyItselfAsAFactor() {
+        assertEquals(Collections.singletonList(5), PrimeFactors.factorize(5));
+    }
+
+    @Test
+    public void sixShouldHaveTwoAndThreeAsFactors() {
+        assertEquals(Arrays.asList(2, 3), PrimeFactors.factorize(6));
     }
 }
