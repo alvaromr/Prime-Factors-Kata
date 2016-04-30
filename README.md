@@ -23,3 +23,8 @@
 - 8 has [2, 2, 2] as prime factors.
 - 9 has [3, 3] as prime factors.
 - ...
+- 
+
+## Acknowlegements
+
+The kata was originally developed by Uncle Bob, together with his son.
