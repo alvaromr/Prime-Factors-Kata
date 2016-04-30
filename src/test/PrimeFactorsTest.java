@@ -14,7 +14,12 @@ public class PrimeFactorsTest {
     }
 
     @Test
-    public void twoHasOnlyItselfAsAFactor(){
+    public void twoShouldHaveOnlyItselfAsAFactor(){
         assertEquals(Collections.singletonList(2), PrimeFactors.factorize(2));
+    }
+
+    @Test
+    public void threeShouldHaveOnlyItselfAsAFactor(){
+        assertEquals(Collections.singletonList(3), PrimeFactors.factorize(3));
     }
 }
