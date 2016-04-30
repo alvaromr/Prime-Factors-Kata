@@ -12,4 +12,9 @@ public class PrimeFactorsTest {
     public void oneShouldNotHavePrimeFactors(){
         assertEquals(Collections.emptyList(), PrimeFactors.factorize(1));
     }
+
+    @Test
+    public void twoHasOnlyItselfAsAFactor(){
+        assertEquals(Collections.singletonList(2), PrimeFactors.factorize(2));
+    }
 }

@@ -5,6 +5,10 @@ import java.util.List;
 
 public class PrimeFactors {
     public static List<Integer> factorize(int number) {
-        return new ArrayList<>();
+        ArrayList<Integer> factors = new ArrayList<>();
+        if(number == 2){
+            factors.add(2);
+        }
+        return factors;
     }
 }
