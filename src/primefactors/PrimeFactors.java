@@ -6,12 +6,13 @@ import java.util.List;
 public class PrimeFactors {
     public static List<Integer> factorize(int number) {
         ArrayList<Integer> factors = new ArrayList<>();
-        while (number % 2 == 0) {
-            factors.add(2);
-            number /= 2;
-        }
-        if (number > 1) {
-            factors.add(number);
+        int candidate = 2;
+        while (number > 1) {
+            while (number % candidate == 0) {
+                factors.add(candidate);
+                number /= candidate;
+            }
+            candidate++;
         }
         return factors;
     }
