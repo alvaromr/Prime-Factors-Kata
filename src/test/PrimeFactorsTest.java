@@ -38,4 +38,9 @@ public class PrimeFactorsTest {
     public void sixShouldHaveTwoAndThreeAsFactors() {
         assertEquals(Arrays.asList(2, 3), PrimeFactors.factorize(6));
     }
+
+    @Test
+    public void eightShouldHaveThreeTimesTwoAsFactors() {
+        assertEquals(Arrays.asList(2, 2, 2), PrimeFactors.factorize(8));
+    }
 }
